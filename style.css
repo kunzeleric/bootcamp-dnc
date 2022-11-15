@@ -1,55 +1,173 @@
+/*Declarando variáveis Globais */
+
+:root{
+    --azul-dnc: #0C70F2;
+    --preto-dnc: #303030;
+    --cinza-hover: #C9C9C9;
+    --fonte-padrão: 'Inter';
+}
+
 body {
     margin: 0px;
     /* Margem Externa */
     padding: 0px;
     /* Margem Interna */
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+    background-repeat: no-repeat;
 }
 
-    /* Menu NAV principal */
+/* Menu NAV principal - Sessão Superior da Página*/
+
 #mainMenu {
     width: 100%;
     height: 100px;
-    background-color: #303030;
+    background-color: var(--preto-dnc);
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(186, 186, 186, 1);
 }
-    /* Div Menu dos Links de Navegação */
-    #menu {
+        /* Div Menu dos Links de Navegação */
+        #menu {
+            display: flex;
+            width: 45%;
+            justify-content: space-around;
+            align-items: center;
+            margin-left:5%;
+        }
+        /* Propriedade da pseudoclasse hover para alterar cor do link pela ação do mouse */
+        #mainMenu div a:hover{
+            color: var(--cinza-hover);
+        }
+
+        #mainMenu div a {
+            font-size: 25px;
+            font-family: var(--fonte-padrão);
+            font-weight: bold;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+         /*Botão do Login do menu NAV */
+        #mainMenu button {
+            margin-right: 5%;
+
+            font-family: var(--fonte-padrão);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+
+            color: #FFFFFF;
+            background: var(--azul-dnc);
+            box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+            cursor: pointer;
+
+            height: 40px;
+            width: 80px;
+        }
+
+    /*Sessão Principal do Site*/
+
+section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top:100px;
+            margin-bottom: 100px;
+}
+
+    header{
+        color: white;
+        font-family: var(--fonte-padrão);
+    }
+
+    header h1{
+        text-transform: uppercase;
+        font-size: 80px;
+        font-weight: 900;
+        text-align: center;
+
+        margin-bottom: 30px;
+    }
+
+    header h2{
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+
+        margin-bottom: 100px;
+    }
+
+    header .fundoBlack{
+        background-color: black;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    /*Formulário*/
+
+    form{
+        color: white;
+        font-family: var(--fonte-padrão);
+        font-weight:600;
+        font-size:30px;
+        width: 600px;
+    }
+
+    .formGroup{
         display: flex;
-        width: 45%;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    form input{
+        border-radius: 10px;
+        border: 0px;
+        height: 30px;
+        font-size: 20px;
+        padding:10px;
+
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    form label{
+        margin: 10px 0 10px 0;
+    }
+
+    /*Estilizando um atributo do input do formulario*/
+    form input::placeholder{
+        color: rgba(57, 57, 57, 0.5);
+    }
+
+    .checkboxItens{
+        display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-left:5%;
-    }
-    /* Propriedade da pseudoclasse hover para alterar cor do link pela ação do mouse */
-    #mainMenu div a:hover{
-        color:#CCCCCC;
     }
 
-    #mainMenu div a {
+    .checkboxItens label{
         font-size: 25px;
-        font-family: 'Inter';
-        font-weight: bold;
-        color: #FFFFFF;
-        text-decoration: none;
     }
-     /*Botão do Login do menu NAV */
-    #mainMenu button {
-        margin-right: 5%;
+    /*Estilizando um atributo do input do tipo CHECKBOX*/
+    input[type="checkbox"]{
+        transform: scale(2);
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+    }
+    /*Estilizando um atributo do botão de cadastro do tipo SUBMIT*/
+    input[type="submit"]{
+        font-size: 32px;
+        color: white;
+        width:100%;
+        height: 56px;
 
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
+        background: rgba(12, 112, 242, 0.9);
+        box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+        border-radius: 10px;
 
-        color: #FFFFFF;
-        background: #0C70F2;
-        box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+        margin-top: 100px;
         cursor: pointer;
-
-        height: 40px;
-        width: 80px;
-
     }
+
+
