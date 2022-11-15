@@ -101,7 +101,7 @@ section{
     header .fundoBlack{
         background-color: black;
         font-weight: bold;
-        padding: 5px;
+        padding: 3px;
     }
 
     /*Formulário*/
@@ -171,3 +171,152 @@ section{
     }
 
 
+    /*Estrutura do Footer*/
+
+footer{
+    background: var(--azul-dnc);
+    width:100%;
+}
+
+    footer .linha1{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer ul{
+        font-weight: 600;
+        list-style: none;
+        margin: 0px;
+        padding:0px;
+    }
+
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        height: 330px
+    }
+
+    footer h5{
+        color: white;
+        text-align: center;
+        font-family: var(--fonte-padrão);
+        font-weight: 800;
+        font-size: 20px;
+
+
+        background-color: var(--preto-dnc);
+        border-radius: 10px;
+        padding: 10px 10px 10px 10px;
+        margin-bottom:15px;
+    }
+
+    footer ul li{
+        text-align: center;
+        color: white;
+        font-family: var(--fonte-padrão);
+        font-weight: 600;
+        font-size: 20px;
+
+        margin: 20px 0px 20px 0px;
+    }
+
+    footer ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    footer ul li a:hover{
+        color: var(--cinza-hover);
+    }
+
+    footer .endereco{
+        font-family: var(--fonte-padrão);
+        font-weight: 600;
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        width: 20%;
+    }
+
+    footer .linha2{
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        height: 30px;
+        padding: 10px;
+    }
+
+    footer .linha2 a {
+
+        font-family: var(--fonte-padrão);
+        font-weight: 600;
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        padding: 0px 7px 0px 7px;
+        margin:0px;
+
+    }
+
+    footer .linha2 a:first-child{
+        border-right: 3px solid white;
+    }
+
+    footer .linha2 a:hover{
+        color: var(--cinza-hover);
+    }
+
+    /* Utilizando Media Query*/
+
+    @media only screen and (max-width: 600px){
+        /*Nav Menu Principal*/
+        #mainMenu{
+            flex-direction: column;
+            height: auto;
+        }
+        /*Div Menu*/
+        #menu{
+            flex-direction: column;
+            width: 100%;
+        }
+        /*Menu Links*/
+        #menu a{
+            display: flex;
+            align-items: center;
+            height: 50px;
+        }
+        /*Menu Botão*/
+        #mainMenu button{
+            width:100%;
+            margin:0px;
+        }
+
+        /*Section*/
+        section h1{
+            font-size: 38px;
+        }
+
+        section h2{
+            font-size: 28px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        /*Formulario*/
+
+        form{
+            width: 95%;
+            font-size: 20px;
+        }
+
+        .checkboxItens label{
+            font-size: 15px;
+        }
+
+         /*Rodapé*/
+
+    }
+    
