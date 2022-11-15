@@ -318,5 +318,25 @@ footer{
 
          /*Rodapé*/
 
+    footer .linha1{
+        flex-direction: column;
+    }
+
+    footer .endereco{
+        text-align: center;
+        width: 95%;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    footer .linha2{
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+        padding:0px 0px 20px 0px;
+        margin-right: 0px;
+        
+    }
+
     }
     
