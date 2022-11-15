@@ -1,0 +1,55 @@
+body {
+    margin: 0px;
+    /* Margem Externa */
+    padding: 0px;
+    /* Margem Interna */
+}
+
+    /* Menu NAV principal */
+#mainMenu {
+    width: 100%;
+    height: 100px;
+    background-color: #303030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(186, 186, 186, 1);
+}
+    /* Div Menu dos Links de Navegação */
+    #menu {
+        display: flex;
+        width: 45%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left:5%;
+    }
+    /* Propriedade da pseudoclasse hover para alterar cor do link pela ação do mouse */
+    #mainMenu div a:hover{
+        color:#CCCCCC;
+    }
+
+    #mainMenu div a {
+        font-size: 25px;
+        font-family: 'Inter';
+        font-weight: bold;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+     /*Botão do Login do menu NAV */
+    #mainMenu button {
+        margin-right: 5%;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+
+        color: #FFFFFF;
+        background: #0C70F2;
+        box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+        cursor: pointer;
+
+        height: 40px;
+        width: 80px;
+
+    }
